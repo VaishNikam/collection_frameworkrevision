@@ -1,0 +1,25 @@
+/*
+Q. Given a binary array consisting of only 0s and 1s, write a function to find the maximum span of consecutive 1's.
+
+Test cases
+Input: 101011110101 Output: 4
+Input: 1010000010110 Output: 2
+*/
+class Solution{
+public static void main(String args[]){
+ int[]arr={ 1,0,1,0,1,1,1,1,0,1,0,1};
+ int count=0;
+ int max=0;
+ for(int i=0;i<arr.length;i++){
+     if(arr[i]==1){
+	  count++;  //1 2 3 4
+	   
+	 }else{
+	  count=0;
+	  }
+	  // max=Math.max(max,count);
+	 
+   }
+   System.out.println("Max consecutive 1s="+ max);
+}
+}
